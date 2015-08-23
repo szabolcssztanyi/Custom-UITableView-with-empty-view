@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7706" systemVersion="14F25a" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoadingTableViewEmptyView" customModule="LoadingIndicator" customModuleProvider="target">
+            <connections>
+                <outlet property="emptyImageView" destination="ebC-kS-t8X" id="nib-qx-hbc"/>
+                <outlet property="emptyTextLabel" destination="YoV-81-WpH" id="Fbw-6h-aBV"/>
+                <outlet property="view" destination="iN0-l3-epB" id="BZT-yZ-Q2R"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="emptyIcon" translatesAutoresizingMaskIntoConstraints="NO" id="ebC-kS-t8X">
+                    <rect key="frame" x="110" y="234" width="100" height="100"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No data available" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="260" translatesAutoresizingMaskIntoConstraints="NO" id="YoV-81-WpH">
+                    <rect key="frame" x="30" y="344" width="260" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="centerY" secondItem="ebC-kS-t8X" secondAttribute="centerY" id="aDX-6A-7OF"/>
+                <constraint firstAttribute="trailing" secondItem="YoV-81-WpH" secondAttribute="trailing" constant="30" id="eNB-Uo-hIS"/>
+                <constraint firstItem="YoV-81-WpH" firstAttribute="top" secondItem="ebC-kS-t8X" secondAttribute="bottom" constant="10" id="jVj-PY-kce"/>
+                <constraint firstAttribute="centerX" secondItem="ebC-kS-t8X" secondAttribute="centerX" id="ntc-NK-FIh"/>
+                <constraint firstItem="YoV-81-WpH" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="30" id="thX-OM-ctu"/>
+            </constraints>
+            <point key="canvasLocation" x="-21" y="326"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="emptyIcon" width="100" height="100"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
