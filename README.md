@@ -1,7 +1,7 @@
 # Custom UITableView with empty view
 Public repository for our blog post about how to create a custom UITableView with an empty view.
 
-<img src="http://zappdesigntemplates.com/wp-content/uploads/2015/07/loading-indicator-iOS-uitableview.gif"/>
+<img src="http://zappdesigntemplates.com/wp-content/uploads/2015/08/blog-post-detail-image.jpg"/>
 
 Public repository for our blog post about how to create a custom UITableView with an empty view.
 
